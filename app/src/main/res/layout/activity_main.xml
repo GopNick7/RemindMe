@@ -19,7 +19,8 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary">
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"> // Задали белый цвет RemindMe Beta
 
             </android.support.v7.widget.Toolbar>
 
@@ -44,6 +45,16 @@
 
         </android.support.v4.view.ViewPager>
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_plus"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"/>
+
+
     </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView
@@ -55,5 +66,6 @@
         app:menu="@menu/menu_navigation">
 
     </android.support.design.widget.NavigationView>
+    
 
 </android.support.v4.widget.DrawerLayout>
